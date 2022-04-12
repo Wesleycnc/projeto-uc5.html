@@ -1,0 +1,105 @@
+/* REGRAS CSS */
+/* Alterando o box model para todos os elementos da pagina  */
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+/* pseudo-elemnto ::after e ::before
+permite adicionar conteúdo dentro de contéudo (depois/antes) */
+h2::after {content:":)"}
+/* SELETOR TAG */
+body {
+   background-image: url(../imagens/tarde.jpg);
+   background-size: cover;
+   background-attachment: fixed;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+}
+/* SELETOR IDENTIFICADO */
+#container {
+    background-color: rgba(255, 255, 255, 0.438);
+    width: 70%;
+    margin: auto;
+    /* Espaçamento/Enchimento interno */
+    padding: 15px;
+    /* MINI EXERCICIO
+    1) Coloque Borda arredondada
+    2) Coloque uma sombra na div */
+    border-radius: 5%;
+    box-shadow: rgb(2, 2, 2) 5px 5px;
+}
+/* Seletor tag
+Finalidade desta regra: tornar as imagens flexiveis */
+img {max-width: 100%;}
+
+h1 {
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    border-bottom: solid 5px;
+    font-size: 60px;
+}
+
+h2 {
+    color: rgb(190, 48, 48);
+    text-shadow: black 2px 2px 5px, rgb(0, 0, 0) -2px -2px 3px;
+    text-align: left;
+}
+
+/* Seletor classe */
+/* Ao usar a classe use o ponto, se não usar não coloque */
+/* id só se usa uma vez, o classe pode ser usada varias vezes. */
+
+/* span tag para marcar uma palavra que deseja personalizar no css. */
+/* Para mexer na imagem no css é necessario fazer um bloco para imagem por exemplo: <p>, <figure>. */
+.centralizar {
+    text-align: left;
+}
+
+.sombra-texto {
+    text-shadow: black 3px 3px 4px;
+}
+
+.canto-arredondado {
+    border-radius: 10px;
+}
+
+.destaque{
+    background-color: yellow;
+    border: solid;
+    padding: 5px;
+}
+
+nav a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+   font-weight: bold ;
+    background-color: black;
+   padding: 15px 30px;
+   
+   display: inline-block;
+   width: 33.33%;
+   /* para alinhar largura, altura, e dimenção automaticamente.  */
+   
+}
+
+nav a:hover{
+    background-color: white;
+    color: darkblue;
+    font-weight: bold;
+  
+    
+}
+
+figure{
+    margin: 0;
+    text-align: center;
+}
+
+figure img{
+    filter: grayscale(100%); 
+    transition: 2s;
+}
+
+figure img:hover{
+    filter: grayscale(0);
+}

@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+}
+
+.centralizar{
+    text-align: center;
+    background-image: url(imagens/mobile-phone-1087845_960_720.webp);
+    padding: 45px;
+    background-size: cover;
+}
+
+.cabecalho{
+    background-color: aliceblue;
+}
+h1{
+    background-color: rgba(240, 248, 255, 0.589);
+    border-radius: 10px;
+
+}
+
+body{
+    background-color: rgba(0, 255, 255, 0.397);
+}
+
+.menu a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+   font-weight: bold ;
+   justify-content: space-around;
+   text-align: center;
+}
+.menu li{
+    display: inline-block;
+    margin: 0 45px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+.menu{
+    text-align: center;
+    background-color: rgba(242, 246, 247, 0.466);
+    padding: 7px;
+}
+
+.menu li :hover {
+    background-color: rgba(0, 0, 0, 0.267);
+    
+}
+
+.sites{
+    text-align: center;
+    
+}
+
+figure {
+    margin: 0 45px;
+    
+    
+}
+
+.portais {
+    background-color: rgba(240, 248, 255, 0.596);
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
