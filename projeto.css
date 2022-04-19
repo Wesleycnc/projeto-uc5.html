@@ -124,3 +124,47 @@ footer{
 
 
 }
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+form{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+form input, form textarea {
+    outline: unset;
+    border: 1px solid rgb(0, 250, 0);
+    border-radius: 20px;
+    width: 300px;
+    padding: 15px;
+}
+
+.alinhar{
+    display: inline-block;
+}
+
+h2{
+    padding: 10px;
+}
+
+.enviar{
+    border: 1px solid rgb(0, 250, 0);
+    border-radius: 20px;
+    width: 300px;
+    padding: 12px;
+}
+
+.cor{
+    background: linear-gradient(100deg,#26E600,#2ffd4bb4 );
+}
