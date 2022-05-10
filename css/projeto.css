@@ -88,7 +88,7 @@ article h1{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 15px;
+
     padding: 35px px;
 
     box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.822);
@@ -211,10 +211,9 @@ fieldset{
     border-radius: 8px;
 }
 legend{
-    border: 1px solid #adadad;
     padding: 10px;
     text-align: center;
-    background-color: #32fc00;
+    background-color: #ffffff;
     border-radius: 8px;
 }
 .inputBox{
@@ -269,7 +268,7 @@ textarea{
 
 }
 .cor{
-    background: linear-gradient(100deg,#26E600,#2ffd4bb4 );
+    background:linear-gradient(100deg,#26E600,#2ffd4bb4 );
 }
 
 @media only screen and (max-width: 1023px) {

@@ -28,12 +28,13 @@ $pagina = basename ($_SERVER['PHP_SELF']);
     <!-- Bot js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-<link rel="stylesheet" href="projeto.css">
+<link rel="stylesheet" href="css/projeto.css">
+<link rel="stylesheet" href="css/login.css">
 </head>
 <body>
  
     <header id="header">
-        <a id="logo" href="index-projeto-uc5.html"><img src="imagens/logo_size-removebg-preview (1).png" ></a>
+        <a id="logo" href="index-projeto-uc5.php"><img src="imagens/logo_size-removebg-preview (1).png" ></a>
 
         <nav id="nav">
             <button id="btn-mobile">Menu 

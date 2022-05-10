@@ -1,16 +1,7 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="login.css">
-    <title>Login</title>
-
-</head>
-<body>
+<?php require "includes/cabecalho.php" ?>
+<body class="cor">
     <div class="img">
-    <img src="imagens/logo_size-removebg-preview (1).png" alt="">
+    
     </div>
     <div class="centro">
         <h1>Login</h1>
@@ -26,10 +17,10 @@
                 <span></span>
                 <label>Senha</label>
               </div>
-              <div class="e-senha">Esqueceu a senha?</div>
+              <div class="e-senha"><a href="recuperar-senha.php">Esqueceu a senha?</a></div>
               <input type="submit" value="Login">
               <div class="signup_link">
-                  Não tem conta? <a href="#">Criar</a>
+                  Não tem conta? <a href="criar-conta.php">Criar</a>
                
               </div>
       </form>

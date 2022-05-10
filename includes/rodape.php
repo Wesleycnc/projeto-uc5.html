@@ -4,7 +4,7 @@
 
 <footer>site desenvolvido para projeto UC5.</footer>
 
-<script src="main.js"></script>
+<script src="js/main.js"></script>
     
 </body>
 
