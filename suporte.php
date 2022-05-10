@@ -1,58 +1,5 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto - UC5</title>
-    <link rel="stylesheet" href="projeto.css">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-</head>
-<body class="cor">
-    
-    <header class="menu-principal">
+<?php require "includes/cabecalho.php" ?>
 
-        <div class="logo">
-            <a href="index-projeto-uc5.html"><img src="imagens/logo_size-removebg-preview (1).png" alt=""></a>
-
-            
-    </div>
-
-
-
-
-    </header>
-   
-        <div class="header-2">
-        <div class="menu">
-     <nav>
-
-            <ul>
-        <li>
-            <a href="index-projeto-uc5.html">HOME</a>
-        </li>
-        <li>
-            <a href="alugar.html
-            ">ALUGAR</a>
-        </li>
-        <li>
-            <a href="campeonato.html">CAMPEONATO</a>
-        </li>
-        <li>
-            <a href="comunidade.html">COMUNIDADE</a>
-        </li>
-        <li>
-            <a href="suporte.html">SUPORTE</a>
-        </li>
-        <li>
-            <a href="login.html">LOGIN</a>
-        </li>
-    </ul>
-      </nav>
-        </div>
-  </div>
-
-  <main>
     <article>
         <h2>Contato</h2>
         <section>
@@ -95,18 +42,5 @@
 
        
     </article>
-</main>
 
-
-
-        <footer>
-          <h1>RODAPÉ</h1>
-
-        </footer>
-    
-
-
-    
-</body>
-
-</html>
+    <?php require "includes/rodape.php" ?>
