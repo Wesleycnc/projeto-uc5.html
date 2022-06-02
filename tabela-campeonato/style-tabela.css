@@ -1,0 +1,45 @@
+.container {
+	width: 75%;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+
+.tabela {
+	width: 50%;
+	text-align: center;
+}
+
+.titulo {
+	background: green;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+tbody {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#col-name {
+	text-align: left;
+}
+#col-pt {
+	text-align: center;
+}
+
+select {
+	width: 150px;
+	height: 35px;
+}
+
+input {
+	width: 150px;
+	height: 35px;
+}
+
+input[type=submit] {
+	width: 100px;
+	height: 35px;
+}
