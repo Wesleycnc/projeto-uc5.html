@@ -1,4 +1,10 @@
-<?php require "includes/cabecalho.php" ?>
+<?php 
+require "includes/cabecalho.php";
+require "includes/conecta.php";
+
+?>
+
+
    <!--  Bot carrosel -->
    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
