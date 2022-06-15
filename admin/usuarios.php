@@ -1,8 +1,9 @@
 <?php 
+require "../includes/cabecalho-admin.php"; 
 require "../includes/funcoes-usuarios.php";
-require "../includes/cabecalho.php"; 
 
-verificaAcessoAdmin();
+
+/* verificaAcessoAdmin(); */
 
 $usuarios = lerUsuarios($conexao);
 $quantidade = count($usuarios);
@@ -62,4 +63,4 @@ $quantidade = count($usuarios);
 	</article>
 </div>
 
-<?php require "../includes/rodape.php"; ?> 
+ 

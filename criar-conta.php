@@ -22,6 +22,7 @@ $tipo = filter_input(INPUT_POST,'tipo', FILTER_SANITIZE_SPECIAL_CHARS);
 
 
 $result = mysqli_query($conexao, "INSERT INTO usuarios(nome,email,senha, tipo) VALUES ('$nome', '$email', '$senha', '$tipo')");
+header("location:admin/usuarios.php");
 }
 ?>
 
