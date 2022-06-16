@@ -1,11 +1,16 @@
 const statesAndCities = [{
-	sp: ['Campinas', 'Agudos', 'Bauru'],
-	rj: ['Parati', 'Valença', 'Itaboraí']
+	sp: ['quadra1', 'quadra2', 'quadra3'],
+
+	rj: ['quadra4', 'quadra5', 'quadra6'],
+
+	mg: ['quadra7', 'quadra8', 'quadra9'],
+
+	ma: ['quadra10', 'quadra11', 'quadra12']
 }]
 
-const states = document.querySelector('#states')
-const cities = document.querySelector('#cities')
-const wrapperCities = document.querySelector('#wrapper-cities')
+const states = document.querySelector('#estados')
+const quadras = document.querySelector('#quadras')
+const wrapperQuadras = document.querySelector('#wrapper-quadras')
 
 const removeChild = (el) => {
 	while (el.firstChild) {
@@ -23,17 +28,17 @@ const hideElement = el => el.style.display = 'none'
 
 const showElement = el => el.style.display = ''
 
-hideElement(wrapperCities)
+hideElement(wrapperQuadras)
 
 states.addEventListener('change', e => {
-	showElement(wrapperCities)
-	removeChild(cities)
+	showElement(wrapperQuadras)
+	removeChild(quadras)
 	if(e.target.value === states.value){
 		statesAndCities.map( data => {			
 			data[e.target.value].map( city => {
 				const option = document.createElement("option")
 				const value = option.text = city;
-				cities.add(option);
+				quadras.add(option);
 			})
 		})
 	}

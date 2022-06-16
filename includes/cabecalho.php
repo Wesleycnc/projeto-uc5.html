@@ -42,7 +42,7 @@ $pagina = basename ($_SERVER['PHP_SELF']);
             </button>
             <ul id="menu">
                 <li><a href="index-projeto-uc5.php">Home</a></li>
-                <li><a href="alugar.php">Alugar</a></li>
+                <li><a href="../agendamento.php">Alugar</a></li>
                 <li><a href="">Comunidade</a></li>
                 <li><a href="suporte.php">Suporte</a></li>
                 <li><a href="login.php">Login</a></li>

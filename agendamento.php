@@ -7,19 +7,20 @@ require "includes/cabecalho.php";
 <div class="container-sm centro">
     <h1>Agendamento</h1>
 <label for="estados">Estados*</label>
-<select class="form-select" aria-label="Disabled select example" >
-  <option selected>Selecione o estado</option>
-  <option value="1">One</option>
-  <option value="2">Two</option>
-  <option value="3">Three</option>
+<select id="estados" class="form-select" aria-label="Disabled select example" >
+  <option>Selecione o estado</option>
+  <option value="sp">SP</option>
+  <option value="rj">RJ</option>
+  <option value="ma">MA</option>
+  <option value="mg">MG</option>
 </select>
-<label for="quadras">Quadras*</label>
-<select class="form-select" aria-label="Disabled select example" >
-  <option selected>Selecione a quadra</option>
-  <option value="1">One</option>
-  <option value="2">Two</option>
-  <option value="3">Three</option>
+
+
+<div id="wrapper-quadras">
+<label for="quadras">Quadras*</label>  
+<select id="quadras" class="form-select" aria-label="Disabled select example" >
 </select>
+</div>
 
 <label for="data">Data*</label>
 <div>
@@ -47,4 +48,6 @@ require "includes/cabecalho.php";
     </div>
 </div>
 
+
+<script src="js/inputs.js"></script>
 </body>
