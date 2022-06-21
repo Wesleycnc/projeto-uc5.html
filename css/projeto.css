@@ -170,11 +170,11 @@ body{
    min-height: 100vh;
    flex-direction: column;
    background-attachment: fixed;
+
 }
-
-main {flex: 1; }
-
-
+main{
+    flex: 1;
+}
 .imagem-avaliacao{
     margin: 0 130px;
 }

@@ -5,8 +5,8 @@
       <h2 class="display-4">
       <?=$_SESSION['nome']?>
       </h2>
-      <p class="lead">Você está no <b>painel de controle e administração</b> do
-      site Microblog e seu <b>nível de acesso</b> é <span class="badge badge-info"><?=$_SESSION['tipo']?></span>.
+      <p class="lead">Você está na <b> sua pagina de usuário</b> do
+      site Rent Sports <b>Sua permissão é de</b> <span class="badge bg-secondary"><?=$_SESSION['tipo']?></span>.
       </p>
       <hr class="my-4">
       <p class="lead">
@@ -18,6 +18,6 @@
       </p>
     </article>
         
-<?php require "../includes/rodape.php" ?>
+<?php require "../includes/rodape-admin.php" ?>
 
 
