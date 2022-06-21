@@ -2,7 +2,7 @@
 require "includes/conecta.php";
 require "includes/funcoes-usuarios.php";
 
-if (!isset($_POST['submit'])) {
+if (isset($_POST['submit'])) {
     
    /*  print_r('Nome:' .$_POST['nome']);
     print_r('<br>');
@@ -19,9 +19,8 @@ $senha = codificaSenha($_POST['senha']);
 
 $tipo = filter_input(INPUT_POST,'tipo', FILTER_SANITIZE_SPECIAL_CHARS);
 
+inserirUsuario($conexao, $nome, $email, $senha, $tipo);
 
-
-$result = mysqli_query($conexao, "INSERT INTO usuarios(nome,email,senha, tipo) VALUES ('$nome', '$email', '$senha', '$tipo')");
 header("location:admin/usuarios.php");
 }
 ?>
@@ -68,7 +67,7 @@ header("location:admin/usuarios.php");
                
                 
                 
-                <input type="submit" value="Criar" id="submit">
+                <input type="submit" name="submit" value="Criar" id="submit">
             </fieldset>
         </form>
 

@@ -10,6 +10,7 @@ const statesAndCities = [{
 
 const states = document.querySelector('#estados')
 const quadras = document.querySelector('#quadras')
+const wrapperCidade = document.querySelector('#wrapper-cidade')
 const wrapperQuadras = document.querySelector('#wrapper-quadras')
 
 const removeChild = (el) => {

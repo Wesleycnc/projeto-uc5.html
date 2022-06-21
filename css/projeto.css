@@ -166,9 +166,15 @@ h2{
 
 
 body{
-    overflow-x: hidden;
-    background-color: rgba(253, 253, 253, 0.61);
+   display: flex;
+   min-height: 100vh;
+   flex-direction: column;
+   background-attachment: fixed;
 }
+
+main {flex: 1; }
+
+
 .imagem-avaliacao{
     margin: 0 130px;
 }
@@ -270,6 +276,7 @@ textarea{
 .cor{
     background:linear-gradient(100deg,#26E600,#2ffd4bb4 );
 }
+
 
 @media only screen and (max-width: 1023px) {
     img {

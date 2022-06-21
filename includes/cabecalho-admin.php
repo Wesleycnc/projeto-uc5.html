@@ -1,3 +1,15 @@
+<?php
+require "funcoes-sessao.php";
+verificaAcesso();
+
+if (isset($_GET['sair'])) {
+    logout();
+}
+
+
+$pagina = basename ($_SERVER['PHP_SELF']);
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -22,17 +34,14 @@
                 <span id="hamburguer"></span>
             </button>
             <ul id="menu">
-                <li><a href="index-projeto-uc5.php">Home</a></li>
+                <li><a href="../admin/index.php">Home</a></li>
                 <li><a href="../admin/usuarios.php">Usuários</a></li>
                 <li><a href="../admin/meu-perfil.php">Meu Perfil</a></li>
                 <li><a href="../admin/comunidade.php">Comunidade</a></li>  
-                <li><a href="../agendamento.php">Alugar</a></li>
-                <li><a href="../login.php">Login</a></li>                
+                <li><a href="../agendamento.php">Alugar</a></li>              
                <li class="nav-item"><a class="nav-link" href="?sair">&times; Sair</a></li>
                 
             </ul>
         </nav>
     </header>
-    
-</body>
-</html>
+<main class="container-sm">
