@@ -1,4 +1,5 @@
 <?php
+require_once "includes/funcoes-sessao.php";
 /* 
 Parte)1 Identificar o arquivo aberto
 $_SERVER["PHP-SELF"] -> traz os dados completos do endereço basenname($_SERVER['SELF']) -> extrai apenas o nome.extensão*/
@@ -42,14 +43,22 @@ $pagina = basename ($_SERVER['PHP_SELF']);
                 <span id="hamburguer"></span>
             </button>
             <ul id="menu">
-                <li><a href="index-projeto-uc5.php">Home</a></li>
-                <li><a href="agendamento.php">Alugar</a></li>
-                <li><a href="">Comunidade</a></li>
+           
+                <li><a href="index-projeto-uc5.php">Página Inicial</a></li>
+
+                
+                <?php if(!isset($_SESSION['id'])){ ?>
                 <li><a href="suporte.php">Suporte</a></li>
-                
-                <li><a href="login.php">Login</a></li>
+                 <li><a href="login.php">Login</a></li>
+               <?php } ?>
+                <?php if(isset($_SESSION['id'])){ ?>
+                    
+                <li><a href="/projeto-uc5.html/suporte.php">Suporte</a></li>    
+                <li><a href="/projeto-uc5.html/admin/index.php">Área exclusiva de <b><?=$_SESSION['nome']?></b></a></li>    
+
+               <?php } ?>
                
-                
+
             </ul>
         </nav>
     </header>

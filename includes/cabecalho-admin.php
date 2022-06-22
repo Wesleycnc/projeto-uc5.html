@@ -42,7 +42,10 @@ $pagina = basename ($_SERVER['PHP_SELF']);
                 ?>           
               <li><a href="../admin/usuarios.php">Usuários</a></li>
             <?php } ?>
-                <li><a href="../agendamento.php">Alugar</a></li>          
+
+            <?php if($_SESSION['tipo'] == 'editor'){  ?> 
+                <li><a href="../agendamento.php">Alugar</a></li>    
+            <?php } ?>    
                 <li><a href="../admin/index.php">Área exclusiva de <b><?=$_SESSION['nome']?></b></a></li>    
                <li class="nav-item"><a href="?sair">&times; Sair</a></li>
                 

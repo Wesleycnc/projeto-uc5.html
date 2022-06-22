@@ -13,12 +13,12 @@
       <p class="lead">
         <a class="btn btn-secondary" href="meu-perfil.php" >Meu perfil</a>
         <a class="btn btn-secondary" href="posts.php">Agendamentos</a>
-        <a class="btn btn-secondary" href="posts.php">Comunidade</a>
+        <a class="btn btn-secondary" href="https://t.me/rentsports" target="_blank">Comunidade</a>
 
         <?php if($_SESSION['tipo'] == 'admin'){ 
           ?>
 
-        <a class="btn btn-primary" href="usuarios.php">Gerenciar Usuários</a>
+        <a class="btn btn-secondary" href="usuarios.php">Gerenciar Usuários</a>
           <?php } ?>
       </p>
     </article>

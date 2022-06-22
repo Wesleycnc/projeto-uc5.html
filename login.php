@@ -1,7 +1,7 @@
 <?php 
-require "includes/cabecalho.php";
-require "includes/funcoes-sessao.php";
-require "includes/funcoes-usuarios.php";
+require_once "includes/cabecalho.php";
+require_once "includes/funcoes-sessao.php";
+require_once "includes/funcoes-usuarios.php";
 
 
 if( isset($_GET['acesso_proibido']) ){
