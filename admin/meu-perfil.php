@@ -1,6 +1,7 @@
 <?php 
-require "../includes/cabecalho.php"; 
+require "../includes/cabecalho-admin.php"; 
 require "../includes/funcoes-usuarios.php";
+
 
 /* Carregaremos os dados da pessoa logada */
 $usuario = lerUmUsuario ($conexao, $_SESSION['id']);
@@ -59,5 +60,5 @@ header("location:index.php");
   </div>
 
 <?php
-require "../includes/rodape.php"; 
+require "../includes/rodape-admin.php"; 
 ?>

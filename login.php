@@ -77,3 +77,5 @@ if (isset($_POST['entrar'])) {
 
 </body>
 </html>
+
+<?php require "includes/rodape.php" ?>

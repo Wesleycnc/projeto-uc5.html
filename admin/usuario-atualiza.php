@@ -1,5 +1,5 @@
 <?php 
-require "../includes/cabecalho.php";
+require "../includes/cabecalho-admin.php";
 require "../includes/funcoes-usuarios.php";
 verificaAcessoAdmin();
 

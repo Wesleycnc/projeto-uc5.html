@@ -2,7 +2,7 @@
 </main>
 
 
-<footer class="position-static fixed-bottom  ">site desenvolvido para projeto UC5.</footer>
+<footer class="position-static fixed-bottom text-center ">Site desenvolvido para projeto UC5.</footer>
 <link rel="stylesheet" href="../css/projeto.css">
 
 <!-- <style>
