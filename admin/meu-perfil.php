@@ -3,8 +3,9 @@ require "../includes/cabecalho-admin.php";
 require "../includes/funcoes-usuarios.php";
 
 
-/* Carregaremos os dados da pessoa logada */
+
 $usuario = lerUmUsuario ($conexao, $_SESSION['id']);
+
 
 if (isset($_POST['atualizar'])) {
   $nome = filter_input(INPUT_POST,'nome', FILTER_SANITIZE_SPECIAL_CHARS);

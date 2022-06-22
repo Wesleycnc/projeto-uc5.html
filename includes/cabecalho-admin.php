@@ -28,20 +28,23 @@ $pagina = basename ($_SERVER['PHP_SELF']);
 <body>
 
 <header id="header">
-        <a id="logo" href="index-projeto-uc5.php"><img src="../imagens/logo_size-removebg-preview (1).png" ></a>
+        <a id="logo" href="../index-projeto-uc5.php"><img src="../imagens/logo_size-removebg-preview (1).png" ></a>
 
         <nav id="nav">
             <button id="btn-mobile">Menu 
                 <span id="hamburguer"></span>
             </button>
             <ul id="menu">
-                <li><a href="../index-projeto-uc5.php">Página Inicial</a></li>
-                <li><a href="../admin/index.php">Minha Área</a></li>
-                <li><a href="../admin/usuarios.php">Usuários</a></li>
-                <li><a href="../admin/meu-perfil.php">Meu Perfil</a></li>
-                <li><a href="#">Comunidade</a></li>  
-                <li><a href="../agendamento.php">Alugar</a></li>              
-               <li class="nav-item"><a class="nav-link" href="?sair">&times; Sair</a></li>
+               
+                <li><a href="../index-projeto-uc5.php">Pagina incial</a></li>
+                <?php 
+                    if($_SESSION['tipo'] == 'admin'){                    
+                ?>           
+              <li><a href="../admin/usuarios.php">Usuários</a></li>
+            <?php } ?>
+                <li><a href="../agendamento.php">Alugar</a></li>          
+                <li><a href="../admin/index.php">Área exclusiva de <b><?=$_SESSION['nome']?></b></a></li>    
+               <li class="nav-item"><a href="?sair">&times; Sair</a></li>
                 
             </ul>
         </nav>

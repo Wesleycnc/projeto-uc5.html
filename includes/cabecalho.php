@@ -46,6 +46,7 @@ $pagina = basename ($_SERVER['PHP_SELF']);
                 <li><a href="agendamento.php">Alugar</a></li>
                 <li><a href="">Comunidade</a></li>
                 <li><a href="suporte.php">Suporte</a></li>
+                
                 <li><a href="login.php">Login</a></li>
                
                 

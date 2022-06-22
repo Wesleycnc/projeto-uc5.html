@@ -1,4 +1,6 @@
-<?php require "../includes/cabecalho.php"; ?> 
+<?php require "../includes/cabecalho-admin.php"; 
+
+?> 
        
   <article class="jumbotron bg-light shadow">
     <h2 class="display-4 bg-warning rounded text-center">Não autorizado</h2>

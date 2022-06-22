@@ -43,3 +43,4 @@ function verificaAcessoAdmin () {
     die(); //ou exit
     }
 }
+
