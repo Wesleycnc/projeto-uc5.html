@@ -63,4 +63,4 @@ $quantidade = count($usuarios);
 	</article>
 </div>
 
- 
+<?php require "../includes/rodape-admin.php" ?>
