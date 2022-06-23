@@ -1,13 +1,13 @@
-<?php require "includes/cabecalho.php" ?>
-<body class="cor" >
+<?php require_once "includes/cabecalho.php" ?>
+<body >
     
     <div class="img">
     <img src="imagens/logo_size-removebg-preview.png" alt="">
     </div>
 
-    <div class="box">
+    <div class="box centro shadow-lg p-3 mb-5 bg-white rounded">
         <form action="https://formspree.io/f/xnqwonvn" method="post">
-            <fieldset>
+            
                 <legend><b>Contato Suporte</b></legend>
                 <br><br>
                 <div class="inputBox">
@@ -48,7 +48,7 @@
                 </div>
                 <br><br>
                 <input type="submit"  id="submit">
-            </fieldset>
+  
         </form>
 
     </div>     
@@ -56,7 +56,7 @@
 
     </main> <!-- fechamento Cabeçalho -->
 
-    <script src="js/main.js"></script>
+
     
 </body>
 </html>

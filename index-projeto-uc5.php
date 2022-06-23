@@ -52,22 +52,22 @@ require "includes/conecta.php";
 
    <article>
 <div class="container">
-    <h1>Avaliações</h1>
+    <h1>Avaliações de clientes</h1>
     <section class="cards">
       
       <div class="card" >
 
-        <img class="user" src="imagens/anonima (1).png" alt="">
+        <img class="user" src="imagens/images.jpg" alt="">
 
-        <h3>anonimo</h3>
+        <h3>Roberto</h3>
         <div class="stars">
-        <img class="star" src="imagens/iconmonstr-star-3.svg" alt="">
-        <img class="star" src="imagens/iconmonstr-star-3.svg" alt="">
-        <img class="star" src="imagens/iconmonstr-star-3.svg" alt="">
-        <img class="star" src="imagens/iconmonstr-star-3.svg" alt="">
-        <img class="star" src="imagens/iconmonstr-star-3.svg" alt="">
+        <img class="star" src="imagens/estrela.png" alt="">
+        <img class="star" src="imagens/estrela.png" alt="">
+        <img class="star" src="imagens/estrela.png" alt="">
+        <img class="star" src="imagens/estrela.png" alt="">
+        <img class="star" src="imagens/estrela.png" alt="">
         
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis laborum ad cupiditate vero, magnam explicabo possimus harum a enim sint nihil perspiciatis distinctio ipsam quod hic natus molestiae assumenda in.</p>
+        <p class="text-center">" O melhor site para alugar quadras!!!, Simplesmente o melhor site para alugar quadras. Atendimento extremamente ágil e eficiente, oferencem as melhores quadras e com o melhor preço. "</p>
 
         </div>
       </div>
@@ -76,17 +76,17 @@ require "includes/conecta.php";
     
       <div class="card" >
 
-        <img class="user" src="imagens/anonima (1).png" alt="">
+        <img class="user" src="imagens/images-pessoa2.jpg" alt="">
 
-        <h3>anonimo</h3>
+        <h3>Pedro</h3>
         <div class="stars">
-        <img class="star" src="imagens/iconmonstr-star-3.svg" alt="">
-        <img class="star" src="imagens/iconmonstr-star-3.svg" alt="">
-        <img class="star" src="imagens/iconmonstr-star-3.svg" alt="">
-        <img class="star" src="imagens/iconmonstr-star-3.svg" alt="">
-        <img class="star" src="imagens/iconmonstr-star-3.svg" alt="">
+        <img class="star" src="imagens/estrela.png" alt="">
+        <img class="star" src="imagens/estrela.png" alt="">
+        <img class="star" src="imagens/estrela.png" alt="">
+        <img class="star" src="imagens/estrela.png" alt="">
+        <img class="star" src="imagens/estrela.png" alt="">
         
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis laborum ad cupiditate vero, magnam explicabo possimus harum a enim sint nihil perspiciatis distinctio ipsam quod hic natus molestiae assumenda in.</p>
+        <p class="text-center">" Esse site me ajudou muito a facilidade de alugar quadras, site perfeito !!! "</p>
 
         </div>
       </div>
@@ -95,17 +95,17 @@ require "includes/conecta.php";
     
       <div class="card" >
 
-        <img class="user" src="imagens/anonima (1).png" alt="">
+        <img class="user" src="imagens/images-pessoa3.jpg" alt="">
 
-        <h3>anonimo</h3>
+        <h3>Caio</h3>
         <div class="stars">
-        <img class="star" src="imagens/iconmonstr-star-3.svg" alt="">
-        <img class="star" src="imagens/iconmonstr-star-3.svg" alt="">
-        <img class="star" src="imagens/iconmonstr-star-3.svg" alt="">
-        <img class="star" src="imagens/iconmonstr-star-3.svg" alt="">
-        <img class="star" src="imagens/iconmonstr-star-3.svg" alt="">
+        <img class="star" src="imagens/estrela.png" alt="">
+        <img class="star" src="imagens/estrela.png" alt="">
+        <img class="star" src="imagens/estrela.png" alt="">
+        <img class="star" src="imagens/estrela.png" alt="">
+        <img class="star" src="imagens/estrela.png" alt="">
         
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis laborum ad cupiditate vero, magnam explicabo possimus harum a enim sint nihil perspiciatis distinctio ipsam quod hic natus molestiae assumenda in.</p>
+        <p class="text-center"> " Site excelente para alugar quadras, nunca vi um igual !!! "</p>
 
         </div>
       </div>     
@@ -115,8 +115,8 @@ require "includes/conecta.php";
 
    <h2>Sobre o site</h2>
 
-  <p>
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus, quaerat ullam? Ullam quasi fuga aspernatur. Nisi autem assumenda est maxime eligendi quo, iusto at quos non aliquid praesentium mollitia rerum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit provident deleniti esse, ipsum quia nesciunt tenetur ut omnis voluptate reiciendis vel laborum. Reprehenderit provident illo nulla. Voluptas voluptatum asperiores soluta!
+  <p class="text-start">
+    Esse site foi desenvolvido para facilitar a locação de quadras para nossos clientes. Com poucos sites que atendem para essas alocações, resolvemos criar a <b>Rent Sports</b>. Que vai ajudar a alugar qualquer tipo de quadra sem sair de casa. vale lembrar que o site ainda esta em desenvolvimento para atendermos da melhor forma nossos clientes. Mande seu feedback para nós através do suporte, para ajustar o site da melhor forma para vocês e terem a melhor experiência conosco. Muito obrigado!! - equipe <b>Rent Sports</b>
   </p>
 
     

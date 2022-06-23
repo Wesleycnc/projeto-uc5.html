@@ -200,7 +200,7 @@ footer{
 
 .box{
     position: absolute;
-    top: 65%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%,-50%);
     background: #ffffff;
@@ -272,9 +272,6 @@ textarea{
     border: 2px solid #32fc00;
     outline: none;
 
-}
-.cor{
-    background:linear-gradient(100deg,#26E600,#2ffd4bb4 );
 }
 
 

@@ -48,12 +48,11 @@ $pagina = basename ($_SERVER['PHP_SELF']);
 
                 
                 <?php if(!isset($_SESSION['id'])){ ?>
-                <li><a href="suporte.php">Suporte</a></li>
+                
                  <li><a href="login.php">Login</a></li>
                <?php } ?>
                 <?php if(isset($_SESSION['id'])){ ?>
-                    
-                <li><a href="/projeto-uc5.html/suporte.php">Suporte</a></li>    
+                 
                 <li><a href="/projeto-uc5.html/admin/index.php">Área exclusiva de <b><?=$_SESSION['nome']?></b></a></li>    
 
                <?php } ?>

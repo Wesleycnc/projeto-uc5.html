@@ -43,7 +43,7 @@ $quantidade = count($usuarios);
 						<td> <?=$usuario['email']?> </td>
 						<td> <?=$usuario['tipo']?> </td>
 						<td class="text-center">
-							<a class="btn btn-warning btn-sm" 
+							<a class="btn btn-success" 
 							href="usuario-atualiza.php?id=<?=$usuario['id']?>">
 								Atualizar
 							</a>
