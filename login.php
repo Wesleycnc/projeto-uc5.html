@@ -53,6 +53,10 @@ if (isset($_POST['entrar'])) {
         <h1>Login</h1>
         <!-- O atributo method define qual o método HTTP para enviar os dados -->
         <form action="" method="POST">
+        <p class="my-2 alert alert-warning text-center">
+        <?=$feedback?>
+            </p>
+
             <div class="txt_field">
                 <input type="text" name="email" id="email" required>
                 <span></span>

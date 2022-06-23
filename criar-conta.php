@@ -1,6 +1,7 @@
-<?php require "includes/cabecalho.php"; 
-require "includes/conecta.php";
-require "includes/funcoes-usuarios.php";
+<?php require_once "includes/cabecalho.php"; 
+require_once "includes/conecta.php";
+require_once "includes/funcoes-usuarios.php";
+require_once "includes/funcoes-sessao.php";
 
 if (isset($_POST['submit'])) {
     
@@ -53,15 +54,16 @@ header("location:admin/usuarios.php");
                 </div>
                 <br><br>
                 <div class="inputBox">
-                <label for="tipo">Tipo: </label> 
-
+                
+              
+                 <label for="tipo">Tipo: </label> 
                 <select class="custom-select" name="tipo"  id="tipo" required>
                     <option value=""></option>
                     <option value="editor">Editor</option>
                     <option value="admin">Administrador</option>
 
                 </select>
-                 
+                
                 </div>
                 <br><br>
                
