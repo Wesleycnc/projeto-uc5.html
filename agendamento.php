@@ -1,13 +1,41 @@
 <?php 
 require "includes/cabecalho.php";
+require_once "includes/conecta.php";
+require_once "includes/funcoes-agendamentos.php";
+require_once "includes/funcoes-sessao.php";
+
+if (isset($_POST['agendar'])) {
+    
+    /*  print_r('Nome:' .$_POST['nome']);
+     print_r('<br>');
+     print_r('Email: :' .$_POST['email']);
+     print_r('<br>');
+     print_r('Senha :' .$_POST['senha']); */
+ 
+ 
+ $nome = filter_input(INPUT_POST,'nome', FILTER_SANITIZE_SPECIAL_CHARS);
+ 
+ $estados = filter_input(INPUT_POST,'estados', FILTER_SANITIZE_SPECIAL_CHARS);
+ 
+ $quadras = filter_input(INPUT_POST,'quadras',FILTER_SANITIZE_SPECIAL_CHARS );
+ 
+ $data = filter_input(INPUT_POST,'data', FILTER_SANITIZE_NUMBER_INT);
+
+ $hora = filter_input(INPUT_POST,'hora', FILTER_SANITIZE_SPECIAL_CHARS);
+ 
+ inserirAgendamentos($conexao, $nome, $estados, $quadras, $data, $hora);
+ 
+ header("location:agendamento.php?quadra_agendada");
+ }
+
 ?>
 
 <body class="cor" >
-
-<div class="container-sm centro">
+<form action="" method="POST">
+<div class="container-sm centro shadow-lg p-3 mb-5 bg-white rounded">
     <h1>Agendamento</h1>
 <label for="estados">Estados*</label>
-<select id="estados" class="form-select" aria-label="Disabled select example" >
+<select name="estados" id="estados" class="form-select" aria-label="Disabled select example" >
   <option>Selecione o estado</option>
   <option value="sp">SP</option>
   <option value="rj">RJ</option>
@@ -18,36 +46,35 @@ require "includes/cabecalho.php";
 
 <div id="wrapper-quadras">
 <label for="quadras">Quadras*</label>  
-<select id="quadras" class="form-select" aria-label="Disabled select example" >
+<select name="quadras" id="quadras" class="form-select" aria-label="Disabled select example" >
 </select>
 </div>
 
 <label for="data">Data*</label>
 <div>
 
-<input id="date" type="date" class="form-control">
+<input name="data" id="date" type="date" class="form-control">
 </div>
 
 
 <div class="col-auto">
 
-    <label for="">Preço*</label>
+    <label for="">Horário*</label>
 
     <div class="input-group">
-    <div class="input-group-text">$</div>
-    <select class="form-select" aria-label="Disabled select example" >
-    <option selected>Preço/hora</option>
-    <option value="1">(1h) 100$</option>
-    <option value="2">(2h) 200$</option>
-    <option value="3">(3h) 300$</option>
+    <select name="hora" class="form-select" aria-label="Disabled select example" >
+    <option  selected>Quantidade de horas</option>
+    <option value="1">1 hora</option>
+    <option value="2">2 horas</option>
+    <option value="3">3 horas</option>
 </select>
 
 </div>
     <div class="pt-5 ps-2 pb-3 d-grid gap-2">
-    <button type="" class="btn btn-success">Agendar!</button>
+    <button name="agendar" type="submit" class="btn btn-success">Agendar!</button>
     </div>
 </div>
 
-
-<script src="js/inputs.js"></script>
+</form>
+<?php require_once "includes/rodape.php"; ?>
 </body>

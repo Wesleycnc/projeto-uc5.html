@@ -1,5 +1,5 @@
 <?php
-require "funcoes-sessao.php";
+require_once "funcoes-sessao.php";
 verificaAcesso();
 
 if (isset($_GET['sair'])) {

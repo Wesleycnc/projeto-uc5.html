@@ -1,12 +1,12 @@
 <?php 
 require "../includes/cabecalho-admin.php"; 
-require "../includes/funcoes-usuarios.php";
+require "../includes/funcoes-agendamentos.php";
 
 
 /* verificaAcessoAdmin(); */
 
-$usuarios = lerUsuarios($conexao);
-$quantidade = count($usuarios);
+$usuarios = lerAgendamentos($conexao);
+$quantidade = count($agendamento);
 
 
 ?>
@@ -37,20 +37,22 @@ $quantidade = count($usuarios);
 
 				<tbody>
 
-<?php foreach( $usuarios as $usuario ) { ?>
+<?php foreach( $agendamentos as $agendamento ) { ?>
 					<tr>
-						<td> <?=$usuario['nome']?> </td>
-						<td> <?=$usuario['email']?> </td>
-						<td> <?=$usuario['tipo']?> </td>
+						<td> <?=$agendamento['nome']?> </td>
+						<td> <?=$agendamento['estados']?> </td>
+						<td> <?=$agendamento['quadras']?> </td>
+						<td> <?=$agendamento['data']?> </td>
+						<td> <?=$agendamento['hora']?> </td>
 						<td class="text-center">
 							<a class="btn btn-success" 
-							href="usuario-atualiza.php?id=<?=$usuario['id']?>">
+							href="usuario-atualiza.php?id=<?=$agendamento['id']?>">
 								Atualizar
 							</a>
 						</td>
 						<td class="text-center">
 							<a class="btn btn-danger btn-sm excluir" 
-							href="usuario-exclui.php?id=<?=$usuario['id']?>">
+							href="usuario-exclui.php?id=<?=$agendamento['id']?>">
 								Excluir
 							</a>
 						</td>

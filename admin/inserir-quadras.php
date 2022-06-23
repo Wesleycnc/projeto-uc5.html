@@ -1,5 +1,5 @@
 <?php 
-require_once "../includes/funcoes-usuarios.php";
+require_once "../includes/funcoes-agendamentos.php";
 require_once "../includes/cabecalho-admin.php"; 
 
 verificaAcessoAdmin();

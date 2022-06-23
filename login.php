@@ -14,6 +14,8 @@ if( isset($_GET['acesso_proibido']) ){
   $feedback = "A senha está errada!";          
 } elseif( isset($_GET['campos_obrigatorios']) ) {
   $feedback = "Você deve preencher todos os campos!";
+} elseif (isset($_GET['conta_criada'])) {
+  $feedback = "Conta criada com sucesso!!!";
 } else {
   $feedback = "";
 }
@@ -43,6 +45,7 @@ if (isset($_POST['entrar'])) {
         }
     }
 }
+
 ?>
 
 <body>

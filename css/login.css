@@ -15,7 +15,7 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     width: 400px;
-    background: #6c757d !important;
+   /*  background: #969899 !important; */
     border-radius: 10px;
 
 }

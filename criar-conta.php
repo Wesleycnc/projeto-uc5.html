@@ -22,7 +22,7 @@ $tipo = filter_input(INPUT_POST,'tipo', FILTER_SANITIZE_SPECIAL_CHARS);
 
 inserirUsuario($conexao, $nome, $email, $senha, $tipo);
 
-header("location:admin/usuarios.php");
+header("location:login.php?conta_criada");
 }
 ?>
 
@@ -32,7 +32,7 @@ header("location:admin/usuarios.php");
     <img src="imagens/logo_size-removebg-preview.png" alt="">
     </div>
 
-    <div class="box centralizar" >
+    <div class="box centralizar shadow-lg p-3 mb-5 bg-white rounded" >
         <form action="criar-conta.php" method="POST">
             <fieldset>
                 <legend><b>Crie sua conta</b></legend>
@@ -58,9 +58,8 @@ header("location:admin/usuarios.php");
               
                  <label for="tipo">Tipo: </label> 
                 <select class="custom-select" name="tipo"  id="tipo" required>
-                    <option value=""></option>
-                    <option value="editor">Editor</option>
-                    <option value="admin">Administrador</option>
+
+                    <option value="editor" selected>Editor</option>
 
                 </select>
                 
