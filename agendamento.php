@@ -13,7 +13,6 @@ if (isset($_POST['agendar'])) {
      print_r('Senha :' .$_POST['senha']); */
  
  
- $nome = filter_input(INPUT_POST,'nome', FILTER_SANITIZE_SPECIAL_CHARS);
  
  $estados = filter_input(INPUT_POST,'estados', FILTER_SANITIZE_SPECIAL_CHARS);
  
@@ -23,7 +22,7 @@ if (isset($_POST['agendar'])) {
 
  $hora = filter_input(INPUT_POST,'hora', FILTER_SANITIZE_SPECIAL_CHARS);
  
- inserirAgendamentos($conexao, $nome, $estados, $quadras, $data, $hora);
+ inserirAgendamentos($conexao, $estados, $quadras, $data, $hora);
  
  header("location:agendamento.php?quadra_agendada");
  }
