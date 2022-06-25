@@ -22,9 +22,9 @@ if (isset($_POST['agendar'])) {
 
  $hora = filter_input(INPUT_POST,'hora', FILTER_SANITIZE_SPECIAL_CHARS);
  
- inserirAgendamentos($conexao, $estados, $quadras, $data, $hora);
+ inserirAgendamentos($conexao, $estados, $quadras, $data, $hora, $_SESSION['id']);
  
- header("location:agendamento.php?quadra_agendada");
+ header("location:admin/agendamentos.php");
  }
 
 ?>
@@ -63,9 +63,9 @@ if (isset($_POST['agendar'])) {
     <div class="input-group">
     <select name="hora" class="form-select" aria-label="Disabled select example" >
     <option  selected>Quantidade de horas</option>
-    <option value="1">1 hora</option>
-    <option value="2">2 horas</option>
-    <option value="3">3 horas</option>
+    <option value="1-hora">1 hora</option>
+    <option value="2-horas">2 horas</option>
+    <option value="3-horas">3 horas</option>
 </select>
 
 </div>

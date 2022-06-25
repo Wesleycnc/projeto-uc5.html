@@ -1,5 +1,5 @@
 const statesAndCities = [{
-	sp: ['quadra1', 'quadra2', 'quadra3'],
+	sp: ['Quadra Penha', 'Quadra Itaquera', 'Quadra Tatuapé'],
 
 	rj: ['quadra4', 'quadra5', 'quadra6'],
 

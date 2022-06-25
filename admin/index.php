@@ -12,9 +12,17 @@
       <hr class="my-4">
       <p class="lead">
         <a class="btn btn-secondary" href="meu-perfil.php" >Meu perfil</a>
-        <a class="btn btn-secondary" href="../agendamento.php">Agendamentos</a>
-        <a class="btn btn-secondary" href="https://t.me/rentsports" target="_blank">Comunidade</a>
 
+      <?php  if($_SESSION['tipo'] == 'editor'){?> 
+
+        <a class="btn btn-secondary" href="../agendamento.php">Agendar</a>
+       <?php } ?>
+        <a class="btn btn-secondary" href="agendamentos.php">Ver agendamentos</a>
+
+        <?php  if($_SESSION['tipo'] == 'editor'){?> 
+        <a class="btn btn-secondary" href="https://t.me/rentsports" target="_blank">Comunidade</a>
+        <?php } ?>
+        
         <?php if($_SESSION['tipo'] == 'admin'){ 
           ?>
 

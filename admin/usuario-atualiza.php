@@ -58,14 +58,14 @@ header("location:usuarios.php");
 
       <div class="form-group">
         <label for="tipo">Tipo:</label>
-        <select class="custom-select" name="tipo" id="tipo" required>
+        <select class="form-control" name="tipo" id="tipo" required>
           <option value=""></option>                  
           <option <?php if($usuario['tipo'] == 'editor') echo " selected "?> value="editor">Editor</option>     
           <option	<?php if($usuario['tipo'] == 'admin') echo " selected "?> value="admin">Administrador</option>
         </select>
       </div>
       
-      <button class="btn btn-primary" name="atualizar">Atualizar usuário</button>
+      <button class="btn btn-primary mt-3" name="atualizar">Atualizar usuário</button>
     </form>
       
   </article>
