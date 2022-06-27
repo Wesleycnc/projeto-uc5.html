@@ -36,7 +36,7 @@ $pagina = basename ($_SERVER['PHP_SELF']);
 <body>
  
     <header id="header">
-        <a id="logo" href="index-projeto-uc5.php"><img src="imagens/logo_size-removebg-preview (1).png" ></a>
+        <a id="logo" href="index.php"><img src="imagens/logo_size-removebg-preview (1).png" ></a>
 
         <nav id="nav">
             <button id="btn-mobile">Menu 
@@ -44,7 +44,7 @@ $pagina = basename ($_SERVER['PHP_SELF']);
             </button>
             <ul id="menu">
            
-                <li><a href="index-projeto-uc5.php">Página Inicial</a></li>
+                <li><a href="index.php">Página Inicial</a></li>
 
                 
                 <?php if(!isset($_SESSION['id'])){ ?>
@@ -53,7 +53,7 @@ $pagina = basename ($_SERVER['PHP_SELF']);
                <?php } ?>
                 <?php if(isset($_SESSION['id'])){ ?>
                  
-                <li><a href="/projeto-uc5.html/admin/index.php">Área exclusiva de <b><?=$_SESSION['nome']?></b></a></li>    
+                <li><a href="admin/index.php">Área exclusiva de <b><?=$_SESSION['nome']?></b></a></li>    
 
                <?php } ?>
                
