@@ -1,11 +1,11 @@
 const statesAndCities = [{
 	sp: ['Quadra Penha', 'Quadra Itaquera', 'Quadra Tatuapé'],
 
-	rj: ['quadra4', 'quadra5', 'quadra6'],
+	rj: ['Quadra Copacabana', 'Quadra São Gonçalo', 'Quadra Ipanema'],
 
-	mg: ['quadra7', 'quadra8', 'quadra9'],
+	mg: ['Quadra Sagrada Família', 'Quadra Céu Azul', 'Quadra Serra'],
 
-	ma: ['quadra10', 'quadra11', 'quadra12']
+	ma: ['Quadra Turu', 'Quadra Cidade Operária', 'Quadra São Francisco']
 }]
 
 const states = document.querySelector('#estados')
